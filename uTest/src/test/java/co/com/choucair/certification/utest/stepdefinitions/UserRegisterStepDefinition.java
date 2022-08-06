@@ -3,7 +3,6 @@ package co.com.choucair.certification.utest.stepdefinitions;
 import co.com.choucair.certification.utest.tasks.Enters;
 import co.com.choucair.certification.utest.tasks.FillsOut;
 import co.com.choucair.certification.utest.tasks.Open;
-import co.com.choucair.certification.utest.tasks.Select;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -37,21 +36,9 @@ public class UserRegisterStepDefinition {
     @When("^she enters her address data$")
     public void sheEntersHerAddressData(List<Map<String, String>> addressData) {
         OnStage.withCurrentActor(Enters.herAddressData(addressData));
-
-    }
-
-    @When("^she enters her devices information$")
-    public void sheEntersHerDevicesInformation(List<Map<String, String>> devicesData) {
-        OnStage.withCurrentActor(Select.herDevicesInformation(devicesData));
-    }
-
-    @When("^she enters a secure password$")
-    public void sheEntersASecurePassword(DataTable arg1) {
-
     }
 
     @Then("^she should be registered on the page$")
     public void sheShouldBeRegisteredOnThePage() {
-
     }
 }
