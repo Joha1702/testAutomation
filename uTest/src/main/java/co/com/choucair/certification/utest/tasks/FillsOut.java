@@ -28,7 +28,8 @@ public class FillsOut implements Task {
                 Type.theValue(personalData.get(0).get("email")).into(INPUT_EMAIL),
                 Type.theValue(personalData.get(0).get("birthMonth")).into(LIST_BIRTHMONTH),
                 Type.theValue(personalData.get(0).get("birthDay")).into(LIST_BIRTHDAY),
-                Type.theValue(personalData.get(0).get("birthYear")).into(LIST_BIRTHYEAR)
+                Type.theValue(personalData.get(0).get("birthYear")).into(LIST_BIRTHYEAR),
+                Click.on(BUTTON_NEXT_LOCATION)
 
 
         );
